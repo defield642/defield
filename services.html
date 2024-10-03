@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timmyservices</title>
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#profile-picture-display img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+#login, #signup {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+        .button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <a href="services.html">Home</a>
+                    <li><a href="#" id="profile-link">Profile</a></li>
+                    <li><a href="#" id="services-link">Services</a></li>
+                    <li><a href="#" id="help-link">Help</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="login-section">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p><a href="#" id="forgot-password-link">Forgot Password?</a></p>
+            <p><a href="#" id="signup-link">Sign Up</a></p>
+        </section>
+        <section id="signup-section" class="hidden">
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="post">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <section id="profile-section" class="hidden">
+            <h2>User Profile</h2>
+            <h2>Profile</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="profile_pic">Upload Profile Picture:</label>
+            <input type="file" id="profile_pic" name="profile_pic" accept="image/*">
+            <button type="submit">Upload</button>
+        </form>
+            <div id="profile-picture-display"></div>
+        </section>
+        <section id="services-section" class="hidden">
+            <h2>Our Services</h2>
+            <ul>
+                <li><a href="#" class="service-link">Service 1</a></li>
+                <li><a href="#" class="service-link">Service 2</a></li>
+                <li><a href="#" class="service-link">Service 3</a></li>
+            </ul>
+        </section>
+        <section id="help-section" class="hidden">
+            <h2>Help</h2>
+            <div class="social-icons">
+                <a href="mailto:email@example.com"><img src="email-icon.png" alt="Email"></a>
+                <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const loginSection = document.getElementById('login-section');
+    const signupSection = document.getElementById('signup-section');
+    const profileSection = document.getElementById('profile-section');
+    const servicesSection = document.getElementById('services-section');
+    const helpSection = document.getElementById('help-section');
+
+    const profileLink = document.getElementById('profile-link');
+    const servicesLink = document.getElementById('services-link');
+    const helpLink = document.getElementById('help-link');
+
+    const signupLink = document.getElementById('signup-link');
+    const forgotPasswordLink = document.getElementById('forgot-password-link');
+
+    signupLink.addEventListener('click', function () {
+        loginSection.classList.add('hidden');
+        signupSection.classList.remove('hidden');
+    });
+
+    profileLink.addEventListener('click', function () {
+        profileSection.classList.remove('hidden');
+        servicesSection.classList.add('hidden');
+        helpSection.classList.add('hidden');
+    });
+
+    servicesLink.addEventListener('click', function () {
+        servicesSection.classList.remove('hidden');
+        profileSection.classList.add('hidden');
+        helpSection.classList.add('hidden');
+    });
+
+    helpLink.addEventListener('click', function () {
+        helpSection.classList.remove('hidden');
+        profileSection.classList.add('hidden');
+        servicesSection.classList.add('hidden');
+    });
+
+    document.getElementById('profile-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const profilePicture = document.getElementById('profile-picture').files[0];
+        if (profilePicture) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('profile-picture-display').innerHTML = `<img src="${e.target.result}" alt="Profile Picture">`;
+            };
+            reader.readAsDataURL(profilePicture);
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

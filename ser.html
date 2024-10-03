@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .background {
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+
+        #header {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        #login, #signup {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, input, button, a {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #profile {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #services, #help {
+            margin: 20px;
+        }
+
+        #services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #services ul li {
+            background-color: grey;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        #help ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #help ul li {
+            margin: 0 10px;
+        }
+
+        #help ul li a {
+            text-decoration: none;
+        }header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const loginSection = document.getElementById('login-section');
+    const signupSection = document.getElementById('signup-section');
+    const profileSection = document.getElementById('profile-section');
+    const servicesSection = document.getElementById('services-section');
+    const helpSection = document.getElementById('help-section');
+
+    const profileLink = document.getElementById('profile-link');
+    const servicesLink = document.getElementById('services-link');
+    const helpLink = document.getElementById('help-link');
+
+    const signupLink = document.getElementById('signup-link');
+    const forgotPasswordLink = document.getElementById('forgot-password-link');
+
+    signupLink.addEventListener('click', function () {
+        loginSection.classList.add('hidden');
+        signupSection.classList.remove('hidden');
+    });
+
+    profileLink.addEventListener('click', function () {
+        profileSection.classList.remove('hidden');
+        servicesSection.classList.add('hidden');
+        helpSection.classList.add('hidden');
+    });
+
+    servicesLink.addEventListener('click', function () {
+        servicesSection.classList.remove('hidden');
+        profileSection.classList.add('hidden');
+        helpSection.classList.add('hidden');
+    });
+
+    helpLink.addEventListener('click', function () {
+        helpSection.classList.remove('hidden');
+        profileSection.classList.add('hidden');
+        servicesSection.classList.add('hidden');
+    });
+
+    document.getElementById('profile-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        const profilePicture = document.getElementById('profile-picture').files[0];
+        if (profilePicture) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.getElementById('profile-picture-display').innerHTML = `<img src="${e.target.result}" alt="Profile Picture">`;
+            };
+            reader.readAsDataURL(profilePicture);
+        }
+    });
+});
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const signupForm = document.querySelector('#signup form');
+            signupForm.addEventListener('submit', (e) => {
+                const password = document.querySelector('#password').value;
+                const confirmPassword = document.querySelector('#confirm_password').value;
+                if (password !== confirmPassword) {
+                    alert('Passwords do not match!');
+                    e.preventDefault();
+                }
+            });
+
+            const loginForm = document.querySelector('#login form');
+            loginForm.addEventListener('submit', (e) => {
+                const firstname = document.querySelector('#firstname').value;
+                const password = document.querySelector('#password').value;
+                if (firstname === '' || password === '') {
+                    alert('First Name and Password are required!');
+                    e.preventDefault();
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+ <header>
+    <div class="background"></div>
+        <nav>
+            <ul>
+                <a href="index.html">Home</a>
+                <li><a href="#" id="profile-link">Profile</a></li>
+                <li><a href="#" id="services-link">Services</a></li>
+                <li><a href="#" id="help-link">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="container">
+        <div id="login">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+                <a href="forgot_password.html">Forgot Password?</a>
+            </form>
+        </div>
+        <div id="signup">
+            <h2>Sign Up</h2>
+            <form action="signup.php" method="post">
+                <label for="firstname">First Name:</label>
+                <input type="text" id="firstname" name="firstname" required>
+                <label for="lastname">Last Name:</label>
+                <input type="text" id="lastname" name="lastname" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <div id="profile">
+        <h2>Profile</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="profile_pic">Upload Profile Picture:</label>
+            <input type="file" id="profile_pic" name="profile_pic" accept="image/*">
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <div id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Service 1</li>
+            <li>Service 2</li>
+            <li>Service 3</li>
+        </ul>
+    </div>
+    <div id="help">
+        <h2>Help</h2>
+        <ul>
+            <li><a href="mailto:contact@example.com">Email</a></li>
+            <li><a href="https://twitter.com/example" target="_blank">Twitter</a></li>
+            <li><a href="https://facebook.com/example" target="_blank">Facebook</a></li>
+            <li><a href="https://instagram.com/example" target="_blank">Instagram</a></li>
+        </ul>
+    </div>
+</body>
+</html>

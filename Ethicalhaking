@@ -1,0 +1,24 @@
+                                               INTRODUCTION TO ETHICAL HACKING
+
+It explains the different types of hackers and the necessary skills and certifications.
+			Setting Up Your Lab Environment
+	Module 2: Networking Fundamentals
+Commands:
+Display network configuration:
+ifconfig
+ip addr show
+Check network connectivity with ping:
+Commands:
+ping 8.8.8.8
+Trace route to a destination:
+Commands:
+traceroute google.com
+Network scan using nmap:
+Commands:
+nmap -sP 192.168.1.0/24
+Module 3: Information Gathering and Reconnaissance
+ Collecting information about a target company without directly interacting with their systems.
+ Using theHarvester:
+ Commands:
+ theHarvester -d example.com -l 500 -b google
+Module 5: System Hacking
