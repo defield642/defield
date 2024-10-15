@@ -1,0 +1,806 @@
+Inter Process Communication is involved in _________?
+
+a.
+Determined Process
+
+b.
+Co-operating Process
+
+c.
+Independent Process
+
+d.
+Undetermined Process
+Feedback
+The correct answer is: Co-operating Process
+Information
+Flag question
+Information text
+A ____ converts the programs written in assembly language into machine instructions .
+Question 2
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+When you start up the computer the boot up storage at which the BIOS versions manufacturer and data are displayed on the monitor is called
+
+a.
+Power on self test (POST)
+
+b.
+System configuration
+
+c.
+Bootstrap
+
+d.
+Kernel loading
+Feedback
+The correct answer is: System configuration
+Question 3
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+A computer can not boot if it does not have the
+
+a.
+Assembler
+
+b.
+Operating system
+
+c.
+Compiler
+
+d.
+Loader
+Feedback
+The correct answer is: Loader
+Question 4
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following does not occur during the power-on-self-test (POST)?
+
+a.
+The memory chip is checked to ensure that they are working properly
+
+b.
+The BIOS identification process occurs
+
+c.
+The video card and video memory are tested
+
+d.
+Tuscan disk utility begins to run
+Feedback
+The correct answer is: Tuscan disk utility begins to run
+Question 5
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Message passing system allows processes to____
+
+a.
+Share data
+
+b.
+Communicate with one another by resorting to shared data
+
+c.
+Communicate with one another without resorting to shared data
+
+d.
+Name the recipient or sender of the message
+Feedback
+The correct answer is: Communicate with one another without resorting to shared data
+Question 6
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+When a computer is first turned on or restarted, a special type of absolute loader is executed, called a
+
+a.
+Compile and Go loader
+
+b.
+Bootstrap loader
+
+c.
+Relating loader
+
+d.
+Boot loader
+Feedback
+The correct answer is: Bootstrap loader
+Question 7
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+State why Process communication is needed?
+
+a.
+All Mentioned Above
+
+b.
+Speed up Computation
+
+c.
+Share Information
+
+d.
+Modularity
+Feedback
+The correct answer is: Share Information
+Question 8
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Programs that coordinate all of the computer’s resources including memory, processing, storage, and devices such as printers are collectively referred to as
+
+a.
+interfaces
+
+b.
+resources
+
+c.
+applications
+
+d.
+language translators
+Feedback
+The correct answer is: resources
+Question 9
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following type of software should be used if you need to create, edit and print document ?
+
+a.
+UNIX
+
+b.
+Desktop publishing
+
+c.
+Word processing
+
+d.
+Spreadsheet
+Feedback
+The correct answer is: Word processing
+Question 10
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+An assembler is___________
+
+a.
+programming language dependent
+
+b.
+syntax dependant
+
+c.
+data dependant
+
+d.
+machine dependant
+Feedback
+The correct answer is: machine dependant
+Question 11
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+A program in execution is called
+
+a.
+Process
+
+b.
+Function
+
+c.
+Instruction
+
+d.
+Procedure
+Feedback
+The correct answer is: Process
+Question 12
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+What is the linker?
+
+a.
+None of the above
+
+b.
+It is always used before the program execution.
+
+c.
+It is required to create the load module.
+
+d.
+It is the same as the loader
+Feedback
+The correct answer is: It is always used before the program execution.
+Question 13
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Which of the following program is not a utility?
+
+a.
+Editor
+
+b.
+Spooler
+
+c.
+All of them
+
+d.
+Debugger
+Feedback
+The correct answer is: Spooler
+Question 14
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Also known as a service program, this type of program performs specific tasks related to managing
+computer resources.
+
+a.
+Device driver
+
+b.
+Operating system
+
+c.
+Utility
+
+d.
+Language translator
+Feedback
+The correct answer is: Utility
+Question 15
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+The object code is then passed through a program called a ___________ which turns it into an executable program.
+
+a.
+None of the above
+
+b.
+Linker
+
+c.
+Source code
+
+d.
+Integer
+Feedback
+The correct answer is: Linker
+Question 16
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+A______ to implement the ideas, their description has to be interpreted in terms related to the ___
+
+a.
+none of the above
+
+b.
+all of them
+
+c.
+application domain
+
+d.
+execution domain
+Feedback
+The correct answer is: all of them
+Question 17
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Systems software is a program that directs the overall operation of the computer, facilitates its use and interacts with the users. What are the different types of this software?
+
+a.
+All of them
+
+b.
+Utilities
+
+c.
+Operating system
+
+d.
+Languages
+Feedback
+The correct answer is: All of them
+Question 18
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+The items that a computer can use in its functioning are collectively called its
+
+::25.::A compiler is a software tool that translates ___________that the computer can understand
+{
+~Algorithm into data
+=Source code into data
+~Computer language into data
+~None of the above
+}
+
+a.
+Resources
+
+b.
+Properties
+
+c.
+Data
+
+d.
+Attributes
+Feedback
+The correct answer is: Resources
+Question 19
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+The essential difference between an operating system like Linux and one like Windows is that
+
+a.
+Any programmer can modify Linux code which is not permitted with Windows
+
+b.
+Windows can run with an Intel processor, whereas Linux cannot
+
+c.
+There are multiple versions of Linux, but only one version of Windows
+
+d.
+Linux is proprietary whereas Windows is not
+Feedback
+The correct answer is: Any programmer can modify Linux code which is not permitted with Windows
+Question 20
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+The link between two processes P and Q to send and receive messages is called_________
+
+a.
+Message-passing link
+
+b.
+Synchronization link
+
+c.
+All of the mention
+
+d.
+Communication link
+Feedback
+The correct answer is: Communication link
+Question 21
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Which of the following does not support more than one program at a time
+
+a.
+Unix
+
+b.
+Linux
+
+c.
+Windows
+
+d.
+-DOS
+Question 22
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+Object program is a
+
+a.
+Program to be translated into machine language
+
+b.
+Translation of high-level language into machine language
+
+c.
+Program written in machine language
+
+d.
+None of the mentioned
+Feedback
+The correct answer is: Translation of high-level language into machine language
+Question 23
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Shell is the exclusive feature of
+
+a.
+Application software
+
+b.
+UNIX
+
+c.
+DOS
+
+d.
+System software
+Feedback
+The correct answer is: UNIX
+Question 24
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+A ___ is a generic term referring to any computer softwares, which manages & controls the hardware so that application software can perform a task.
+
+a.
+All of them
+
+b.
+OS
+
+c.
+System software
+
+d.
+Application software
+Feedback
+The correct answer is: System software
+Question 25
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+A ___ is a program that takes as input a program written in one programming language and produces as output a program in another language.
+
+a.
+translator
+
+b.
+Language translator
+
+c.
+compiler
+
+d.
+interpreter
+Feedback
+The correct answer is: Language translator
+Question 26
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Programs that coordinate computer resources, provide an interface between users and the computer,and run applications are called
+
+a.
+language translators
+
+b.
+utilities
+
+c.
+device drivers
+
+d.
+operating systems
+Feedback
+The correct answer is: operating systems
+Question 27
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following system software resides in main memory ?
+
+a.
+All of them
+
+b.
+Linker
+
+c.
+Texteditor
+
+d.
+Assembler
+Feedback
+The correct answer is: All of them
+Question 28
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following is not a function of the operating system?
+
+a.
+Provide a user interface
+
+b.
+Manage resources
+
+c.
+Load and run applications
+
+d.
+Internet access
+Feedback
+The correct answer is: Internet access
+Question 29
+Incorrect
+Mark 0.00 out of 1.00
+Flag question
+Question text
+A binary object file is either an executable file that runs on a particular machine or a file containing object code that needs to be linked. the object code is generated by a _________ or by an ________
+
+a.
+linker, loader
+
+b.
+link editor, loader
+
+c.
+compiler, assembler
+
+d.
+assembler, linker
+Feedback
+The correct answer is: link editor, loader
+Question 30
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Translator for low level programming language were termed as
+
+a.
+Compiler
+
+b.
+Linker
+
+c.
+Assembler
+
+d.
+Loader
+Feedback
+The correct answer is: Assembler
+Question 31
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+A mobile computing environment, in general, can be considered as a type of a __________ environment as well
+
+a.
+Grid computing
+
+b.
+None of the above
+
+c.
+Mobile computing
+
+d.
+Distributed computing
+Feedback
+The correct answer is: Distributed computing
+Question 32
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Software that allows your computer to interact with the user, applications, and hardware is called
+
+a.
+application software
+
+b.
+system software
+
+c.
+word processor
+
+d.
+database software
+Feedback
+The correct answer is: system software
+Question 33
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following system software resides in main memory always ?
+
+a.
+Linker
+
+b.
+Assembler
+
+c.
+Text editor
+
+d.
+Loader
+Feedback
+The correct answer is: Loader
+Question 34
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Specialized programs that allow particular input or output devices to communicate with the rest of
+the computer system are called
+
+a.
+device drivers
+
+b.
+language translators
+
+c.
+operating systems
+
+d.
+utilities
+Feedback
+The correct answer is: device drivers
+Question 35
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+
+a.
+Assembler
+
+b.
+Machine compiler
+
+c.
+Interpreter
+
+d.
+Converter
+Feedback
+The correct answer is: Assembler
+Question 36
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+A UNIX device driver is
+
+a.
+Structured into two halves called top half and bottom half
+
+b.
+Unstructured
+
+c.
+None of the above
+
+d.
+Three equal partitions
+Feedback
+The correct answer is: Structured into two halves called top half and bottom half
+Question 37
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Shell is the exclusive feature of
+
+a.
+System software
+
+b.
+UNIX
+
+c.
+Application software
+
+d.
+DOS
+Feedback
+The correct answer is: UNIX
+Question 38
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+Which of the following program is not a utility?
+
+a.
+Debugger
+
+b.
+All of the above
+
+c.
+Spooler
+
+d.
+Editor
+Feedback
+The correct answer is: All of the above
+Question 39
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+In order for a computer to understand a program, it must be converted into machine language byaNo__________.
+
+a.
+Operating system
+
+b.
+Device driver
+
+c.
+Language translator
+
+d.
+Utility
+Feedback
+The correct answer is: Language translator
+Question 40
+Correct
+Mark 1.00 out of 1.00
+Flag question
+Question text
+A_______runs on computer hardware and serves as a platform for another system to run on
+
+a.
+Operating system
+
+b.
+All of the above
+
+c.
+System Utilities
+
+d.
+Application system
+Feedback
+The correct answer is: Operating system
